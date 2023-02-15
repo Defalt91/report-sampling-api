@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import "./App.css"
+import MonsterGraphs from "./components/MonsterGraphs"
+import HighchartsGraph from "./components/HighlightGraph"
+import Sidebar from "./components/Sidebar"
+import { Container } from "./components/styles/Container"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Container>
+
+			<Router>
+				<Sidebar />
+				<Routes>
+					<Route path='monster' element={<MonsterGraphs />} />
+					<Route path='highcharts' element={<HighchartsGraph />} />
+					{/* <Route path='monster' element={<MonsterGraphs />} /> */}
+				</Routes>
+			</Router>
+		</Container>
+	)
 }
 
-export default App;
+export default App
