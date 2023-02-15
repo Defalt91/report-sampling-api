@@ -2,7 +2,7 @@ import { NavbarStyle } from "./styles/NavbarStyle"
 
 
 const Navbar = () => {
-	return <NavbarStyle>This is a hero header</NavbarStyle>
+	return <NavbarStyle><h3>This is a hero header</h3></NavbarStyle>
 }
 
 export default Navbar
