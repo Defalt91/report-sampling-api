@@ -1,3 +1,16 @@
+# Aqui agregaree algunas notas para el proyecto xd
+1. Tenemos que calar varias librerias para mostrar reportes/diagramas
+2. Tenemos que jalar api info de diferentes fuentes o DB 
+3. Vamos implementando pruebas con clickhouse db 
+
+No se si implementar el backend aqui mismo o meterlo en otro repo... 
+
+Librerias en la mira:
+    FlexMonster 
+    HighCharts
+    React Pivot tables 
+    Hmmm otros... 
+------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
