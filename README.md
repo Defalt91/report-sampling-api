@@ -16,7 +16,7 @@ No se si implementar el backend aqui mismo o meterlo en otro repo...
 https://plotly.com/python/
 
 * Cube.js
-https://cube.dev/
+[https://cube.dev/](https://cube.dev/docs/getting-started/docker)
 
 ------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
