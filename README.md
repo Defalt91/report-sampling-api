@@ -5,7 +5,7 @@
 
 No se si implementar el backend aqui mismo o meterlo en otro repo... 
 
-Librerias en la mira:
+    Librerias en la mira:
 FlexMonster 
 HighCharts
 React Pivot tables 
