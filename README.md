@@ -12,7 +12,12 @@ No se si implementar el backend aqui mismo o meterlo en otro repo...
 * Hmmm otros... 
 
     Added new:
-* Plotly
+* Plotly 
+https://plotly.com/python/
+
+* Cube.js
+https://cube.dev/
+
 ------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
