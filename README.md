@@ -6,13 +6,13 @@
 No se si implementar el backend aqui mismo o meterlo en otro repo... 
 
     Librerias en la mira:
-FlexMonster 
-HighCharts
-React Pivot tables 
-Hmmm otros... 
+* FlexMonster 
+* HighCharts
+* React Pivot tables 
+* Hmmm otros... 
 
     Added new:
-Plotly
+* Plotly
 ------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
