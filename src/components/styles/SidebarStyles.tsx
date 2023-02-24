@@ -14,7 +14,7 @@ export const SidebarStyle = styled.section`
 		padding: 2rem 0;
 	}
 	img {
-		width: 80%;
+		width: 60%;
 		height: 62px;
 	}
 	.invert {
@@ -25,7 +25,7 @@ export const SidebarStyle = styled.section`
 		list-style: none;
 	}
 	li {
-		padding: 22px 0;
+		/* padding: 22px 0; */
 		font-size: 18px;
 		font-weight: 500;
 		cursor: pointer;
@@ -35,8 +35,14 @@ export const SidebarStyle = styled.section`
 	li:hover {
 		background-color: ${colors.primaryDark};
 	}
+
 	a {
 		text-decoration: none;
 		color: ${colors.white};
+		display: block;
+		padding: 22px 0;
+	}
+	.selected {
+		background-color: ${colors.primaryDark};
 	}
 `
