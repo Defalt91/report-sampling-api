@@ -1,91 +1,94 @@
-import Highcharts from "highcharts";
-import HighchartsReact from "highcharts-react-official";
+import Highcharts from "highcharts"
+import HighchartsReact from "highcharts-react-official"
 import { useState } from "react"
 
-
 const ChartContainer = (props) => {
-    const { chartRef, setChartInfo } = props
+	const { chartRef, setChartInfo } = props
 
-    console.log(chartRef, 'useref info');
-    //Interface Highcharts.Options 
-    const [lineOptions] = useState({
-        plotOptions: {
-            series: {
-                point: {
-                    events: {
-                        mouseOver: function () {
-                            setChartInfo({
-                                name: this.series.name,
-                                x: this.x,
-                                y: this.y
-                            });
-                        },
-                        mouseOut: function () {
-                            setChartInfo(null);
-                        }
-                    }
-                }
-            }
-        },
-        series: [
-            {
-                data: [2, 7, 5, 1, 4]
-            },
-            {
-                data: [4, 3, 5, 6, 2, 3]
-            }
-        ]
-    })
+	console.log(chartRef, "useref info")
+	//Interface Highcharts.Options
+	const [lineOptions] = useState({
+		plotOptions: {
+			series: {
+				point: {
+					events: {
+						mouseOver: function () {
+							setChartInfo({
+								name: this.series.name,
+								x: this.x,
+								y: this.y,
+							})
+						},
+						mouseOut: function () {
+							setChartInfo(null)
+						},
+					},
+				},
+			},
+		},
+		series: [
+			{
+				data: [2, 7, 5, 1, 4],
+			},
+			{
+				data: [4, 3, 5, 6, 2, 3],
+			},
+		],
+	})
 
-    const series = [{
-        name: "Gases",
-        data: [{
-            name: 'Argon',
-            y: 0.9,
-            color: '#3498db'
-        },
-        {
-            name: 'Nitrogen',
-            y: 78.1,
-            color: '#9b59b6'
-        },
-        {
-            name: 'Oxygen',
-            y: 20.9,
-            color: '#2ecc71'
-        },
-        {
-            name: 'Trace Gases',
-            y: 0.1,
-            color: '#f1c40f'
-        }]
-    }]
+	const series = [
+		{
+			name: "Gases",
+			data: [
+				{
+					name: "Argon",
+					y: 0.9,
+					color: "#3498db",
+				},
+				{
+					name: "Nitrogen",
+					y: 78.1,
+					color: "#9b59b6",
+				},
+				{
+					name: "Oxygen",
+					y: 20.9,
+					color: "#2ecc71",
+				},
+				{
+					name: "Trace Gases",
+					y: 0.1,
+					color: "#f1c40f",
+				},
+			],
+		},
+	]
 
-    const [barOption] = useState({
-        chart: {
-            type: 'pie',
-            renderTo: 'atmospheric-composition'
-        },
-        title: {
-            verticalAlign: 'middle',
-            floating: true,
-            text: 'Earth\'s Atmospheric Composition',
-            style: {
-                fontSize: '10px',
-            }
-        },
-        plotOptions: {
-            pie: {
-                dataLabels: {
-                    format: '{point.name}: {point.percentage:.1f} %'
-                },
-                innerSize: '70%'
-            }
-        },
-        series: series
-    })
+	const [barOption] = useState({
+		chart: {
+			type: "pie",
+			renderTo: "atmospheric-composition",
+		},
+		title: {
+			verticalAlign: "middle",
+			floating: true,
+			text: "Earth's Atmospheric Composition",
+			style: {
+				fontSize: "10px",
+			},
+		},
+		plotOptions: {
+			pie: {
+				dataLabels: {
+					format: "{point.name}: {point.percentage:.1f} %",
+				},
+				innerSize: "70%",
+			},
+		},
+		series: series,
+	})
 
-    const [guageOptions] = useState({
+	/* const [guageOptions] = useState({
         chart: {
             type: 'solidgauge',
             height: '110%',
@@ -188,15 +191,15 @@ const ChartContainer = (props) => {
                 y: 50
             }]
         }]
-    })
+    }) */
 
-    return (
-        <>
-            <HighchartsReact ref={chartRef} highcharts={Highcharts} options={lineOptions} />
-            <HighchartsReact ref={chartRef} highcharts={Highcharts} options={barOption} />
-            {/* <HighchartsReact ref={chartRef} highcharts={Highcharts} options={guageOptions} /> */}
-        </>
-    )
+	return (
+		<>
+			<HighchartsReact ref={chartRef} highcharts={Highcharts} options={lineOptions} />
+			<HighchartsReact ref={chartRef} highcharts={Highcharts} options={barOption} />
+			{/* <HighchartsReact ref={chartRef} highcharts={Highcharts} options={guageOptions} /> */}
+		</>
+	)
 }
 
 export default ChartContainer
