@@ -1,7 +1,7 @@
 import { Legend, LineElement, Tooltip, ArcElement } from "chart.js"
 import { BarElement, CategoryScale, Chart, RadialLinearScale, LinearScale, Title, PointElement } from "chart.js"
 import { Bar, Line, Doughnut, PolarArea } from "react-chartjs-2"
-import Searchbar from "./Searchbar"
+//import Searchbar from "./Searchbar"
 import { MaincontentStyle } from "./styles/MaincontentStyle"
 
 const ReactChart = () => {
@@ -187,9 +187,9 @@ const ReactChart = () => {
 
 	return (
 		<MaincontentStyle>
-			<Searchbar />
+			{/* <Searchbar /> */}
 			<div>
-				<div className="div-title"> react chart 2 or chart.js ??</div>
+				{/* <div className="div-title"> react chart 2 or chart.js ??</div> */}
 				<Bar options={optionsHor} data={data} className="chart-container" />
 				<Bar options={optionsBar} data={dataPos} className="chart-container" />
 				<Line options={optionsLine} data={dataLine} className="chart-container" />
