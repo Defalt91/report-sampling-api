@@ -45,6 +45,11 @@ const Sidebar = () => {
 							ECharts
 						</NavLink>
 					</li>
+					<li>
+						<NavLink to="/iframe" className={({ isActive }) => (isActive ? "selected" : undefined)}>
+							IFrame
+						</NavLink>
+					</li>
 				</ul>
 			</div>
 		</SidebarStyle>

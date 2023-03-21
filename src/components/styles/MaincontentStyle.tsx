@@ -27,4 +27,8 @@ export const MaincontentStyle = styled.section`
 		justify-content: center;
 		padding-bottom: 3rem;
 	}
+	.frame-style {
+		height: 100%;
+		margin: 28px 0;
+	}
 `
