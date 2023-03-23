@@ -18,14 +18,14 @@ function App() {
 				{/* <Sidebar /> */}
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="monster" element={<MonsterGraphs />} />
-					<Route path="highcharts" element={<HighchartsGraph />} />
-					<Route path="pivottable" element={<PivotTable />} />
-					<Route path="cubejs" element={<Cube />} />
-					<Route path="reactchart" element={<ReactChart />} />
-					<Route path="reactvis" element={<ReactVis />} />
-					<Route path="echarts" element={<Echarts />} />
-					<Route path="iframe" element={<Iframe />} />
+					<Route path="/monster" element={<MonsterGraphs />} />
+					<Route path="/highcharts" element={<HighchartsGraph />} />
+					<Route path="/pivottable" element={<PivotTable />} />
+					<Route path="/cubejs" element={<Cube />} />
+					<Route path="/reactchart" element={<ReactChart />} />
+					<Route path="/reactvis" element={<ReactVis />} />
+					<Route path="/echarts" element={<Echarts />} />
+					<Route path="/iframe" element={<Iframe />} />
 				</Routes>
 			</Router>
 		</Container>
